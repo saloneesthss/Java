@@ -12,21 +12,21 @@ public class Methods {
         Calculations calc=new Calculations();
         switch (c){
             case 1:
-            int add=calc.Add(a, b);
-            System.out.println(add);
-            break;
+                int add=calc.Add(a, b);
+                System.out.println(add);
+                break;
             case 2:
-            int sub=calc.Sub(a, b);
-            System.out.println(sub);
-            break;
+                int sub=calc.Sub(a, b);
+                System.out.println(sub);
+                break;
             case 3:
-            int mul=calc.Mul(a, b);
-            System.out.println(mul);
-            break;
+                int mul=calc.Mul(a, b);
+                System.out.println(mul);
+                break;
             case 4:
-            int div=calc.Div(a, b);
-            System.out.println(div);
-            break;
+                int div=calc.Div(a, b);
+                System.out.println(div);
+                break;
 
         }
         sc.close();
