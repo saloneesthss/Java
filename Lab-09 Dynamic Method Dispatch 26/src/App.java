@@ -5,7 +5,7 @@ public class App {
         a.eat();
         d.move();
     }
-}
+} 
 class Animal {
     public void eat() {
         System.out.println("Eat all eatables.");

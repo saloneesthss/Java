@@ -10,7 +10,7 @@ interface Area {
 }
 interface Perimeter {
     double calculatePerimeter();
-}
+} 
 class Calculation implements Area,Perimeter {
     private double length, breadth;
     public Calculation(double l, double b) {

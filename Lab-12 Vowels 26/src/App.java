@@ -12,7 +12,7 @@ public class App {
             char ch = is.charAt(i);
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch== '0' || ch == 'u') {
                 vCount++;
-            }
+            } 
         }
         System.out.println("Number of Vowels:" +vCount);
     }
