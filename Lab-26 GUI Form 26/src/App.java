@@ -34,18 +34,18 @@ public class App {
         f.add(addressArea);
 
         JLabel emailLabel=new JLabel("Email:");
-        emailLabel.setBounds(20,150,100,25);
+        emailLabel.setBounds(20,100,100,25);
         emailField=new JTextField();
-        emailField.setBounds(140,150,200,25);
+        emailField.setBounds(140,100,200,25);
         f.add(emailLabel);
         f.add(emailField);
 
         JLabel genderLabel=new JLabel("Gender:");
-        genderLabel.setBounds(20,190,100,25);
+        genderLabel.setBounds(20,140,100,25);
         maleButton=new JRadioButton("Male");
-        maleButton.setBounds(140,190,100,25);
+        maleButton.setBounds(140,140,100,25);
         femaleButton=new JRadioButton("Female");
-        femaleButton.setBounds(240,190,100,25);
+        femaleButton.setBounds(240,140,100,25);
         ButtonGroup genderGroup=new ButtonGroup();
         genderGroup.add(maleButton);
         genderGroup.add(femaleButton);
@@ -54,28 +54,28 @@ public class App {
         f.add(femaleButton);
 
         JLabel countryLabel=new JLabel("Country:");
-        countryLabel.setBounds(20,230,100,25); 
+        countryLabel.setBounds(20,180,100,25); 
         String[] countries ={"USA","Canada","UK","Australia","Other"};
         countryComboBox= new JComboBox<>(countries);
-        countryComboBox.setBounds(140, 230, 200, 25);
+        countryComboBox.setBounds(140, 180, 200, 25);
         f.add(countryLabel);
         f.add(countryComboBox);
 
         JLabel hobbiesLabel = new JLabel("Hobbies:");
-        hobbiesLabel.setBounds(20, 270, 100, 25);
+        hobbiesLabel.setBounds(20, 220, 100, 25);
         hobbyReading = new JCheckBox("Reading");
-        hobbyReading.setBounds(140,270,100,25);
+        hobbyReading.setBounds(140,220,100,25);
         hobbyTravelling= new JCheckBox("Travelling");
-        hobbyTravelling.setBounds(140,300,100,25);
+        hobbyTravelling.setBounds(140,250,100,25);
         hobbySports= new JCheckBox("Sports");
-        hobbySports.setBounds(140, 330, 100, 25);
+        hobbySports.setBounds(140, 280, 100, 25);
         f.add(hobbiesLabel);
         f.add(hobbyReading);
         f.add(hobbyTravelling);
         f.add(hobbySports);
 
         submitButton= new JButton("Submit");
-        submitButton.setBounds(140,300,100,25);
+        submitButton.setBounds(140,330,100,25);
         f.add(submitButton);
 
         f.setSize(400,500);
