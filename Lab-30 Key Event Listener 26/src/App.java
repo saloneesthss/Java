@@ -13,7 +13,8 @@ public class App implements KeyListener {
         txtOne.setBounds(20, 80, 100, 20);
         txtTwo=new TextField();
         txtTwo.setBounds(20, 110, 100, 20);
-        f.addKeyListener(this);
+        txtOne.addKeyListener(this);
+        txtTwo.addKeyListener(this);
         f.add(lbloutput);
         f.add(txtOne);
         f.add(txtTwo);

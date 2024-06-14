@@ -5,7 +5,7 @@ public class StudentDB {
         try {
             Class.forName("com.mysql.jdbc.Driver"); 
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/swastikdb?useSSL=false","root","root");  
-            String sql="insert into student(Id,Name,Address,Gender) values(?,?,?,?)";
+            String sql="insert into students(Id,Name,Email,Gender) values(?,?,?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1, id);
             ps.setString(2, name);
@@ -23,7 +23,7 @@ public class StudentDB {
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/swastikdb?useSSL=false","root","root");  
             
             Statement stmt=con.createStatement();  
-            ResultSet rs=stmt.executeQuery("select * from student where gender='Female'");  
+            ResultSet rs=stmt.executeQuery("select * from students where gender='Female'");  
             while(rs.next())  
             System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4));  
             con.close();  
