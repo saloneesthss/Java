@@ -25,7 +25,7 @@ class Customer {
                 wait();
             } catch(Exception e) {}
         }
-        this.amount=amount;
+        this.amount-=amount;
         System.out.println("Withdraw completed...");
     }
     synchronized void deposit(int amount) {
